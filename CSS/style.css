@@ -9,22 +9,26 @@ body {
     justify-content: center;
     /* Alinha os elementos na vertical */
     align-items: center;
-    background-image: url('../IMG/fundo.jpg');
+    background:#d1b3c4;
+    /*background-image: url('../IMG/fundo.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
     text-align: center;
 }
 
-form{
-    display: inline-block;
+.formulario{
+    display:flex;
     flex-direction:column;
     background-color:white;
-    height: 45%;
+    height: 49%;
     width: 25%;
     padding-top: 1%;
     border-radius:5%;
-}
+    margin-bottom: 15%;
+    position:absolute;
+    z-index: 10;
 
+}
 input[type=text]{
     width: 300px;
     height: 30px;
@@ -44,7 +48,7 @@ form p{
 }
 
 #botao{
-    background-color: #a626cf;
+    background-color: #ad3f84;
     border: none;
     border-radius: 10px;
     height: 80px;
@@ -62,6 +66,45 @@ form p{
 }
 
 #botao:hover{
-    background-color: #ad3f84;
-    transition: 0.25s;
+    background-color:#ee5c8a;
 }
+
+.waves{
+    position:relative;
+    z-index: 2;
+    height: -25px;
+    bottom: 0;
+    margin-left: 0 ;
+    margin-right: 0;
+   
+}
+
+.wave-1 {
+    animation: moveWave1 3s ease-in-out infinite alternate;
+  }
+
+  @keyframes moveWave1 {
+    from {
+      transform: translateX(-2000px);
+    }
+  }
+
+  .wave-2 {
+    animation: moveWave2 3s 1.2s ease-in-out infinite alternate;
+  }
+
+  @keyframes moveWave2 {
+    from {
+      transform: translateX(-1800px);
+    }
+  }
+
+  .wave-3 {
+    animation: moveWave3 3s 0.7s ease-in-out infinite alternate;
+  }
+
+  @keyframes moveWave3 {
+    from {
+      transform: translateX(-1600px);
+    }
+  }
